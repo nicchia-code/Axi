@@ -1,0 +1,13 @@
+From: Mario Rossi <mario.rossi@example.com>
+To: Luca <luca@example.com>
+Subject: Riepilogo del progetto Axi
+Date: Mon, 6 Oct 2025 09:30:00 +0200
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Ciao Luca,
+ti invio il riepilogo della riunione: la coda di archiviazione è pronta
+e i test del vault passano.
+
+Un saluto,
+Mario

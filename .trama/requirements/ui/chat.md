@@ -1,0 +1,45 @@
+---
+description: Use when building the mini-chat, its messages, citations, conversation list or deletion confirmation.
+---
+# Mini-chat
+
+## mini-chat
+- Con il puntino visibile la chat è un pannello accanto al personaggio, dal lato con più spazio, interamente sullo schermo: si apre dal personaggio con un'animazione e vi si richiude con l'animazione inversa.
+- Con il puntino nascosto la chat è un pannello ancorato sotto l'icona della barra dei menu, sullo schermo attivo: scende dall'icona con un'animazione e vi risale con l'animazione inversa quando si chiude. Se la barra dei menu è nascosta (per esempio in un'app a schermo intero) la chat si apre comunque in alto sullo schermo attivo, sotto il punto dell'icona, sopra l'app a schermo intero.
+- Quando il puntino si nasconde o riappare con la chat aperta, la chat resta aperta con la sua conversazione e si sposta con un'animazione sotto l'icona della barra o accanto al personaggio.
+- Dimensione iniziale circa 380 × 520 pt, ridimensionabile; resta interamente visibile sullo schermo, anche quando la si ridimensiona.
+- Resta aperta quando l'utente fa clic su un'altra app; si chiude con il pulsante Chiudi, con Esc, con la scorciatoia o il tasto della chat, o con un clic sul personaggio o sulla sua icona nella barra.
+- In alto: titolo della conversazione e pulsanti Nuova conversazione, Conversazioni e Chiudi.
+- Il contesto dello schermo compare sopra il campo di testo come etichetta con icona dell'app e titolo del documento o della finestra, con una ✕ per toglierlo.
+- Le risposte arrivano man mano e sono formattate in Markdown.
+- Quando OMP ricomincia a scrivere nella stessa risposta, la bolla sostituisce il suo testo con il nuovo, senza svuotarsi prima dell'arrivo del nuovo testo; le etichette dei documenti citati restano.
+- Ogni documento citato è un'etichetta cliccabile con titolo e pagina.
+- Durante una risposta il pulsante di invio diventa Stop.
+- Gli errori compaiono come messaggio nella conversazione, con il pulsante Riprova quando ha senso.
+
+## mini-chat/In preparazione
+- Quando la lettura dello schermo fallisce per un permesso mancante, il messaggio nella conversazione lo nomina (italiano / inglese). Se manca solo Accessibility la lettura non fallisce, perché passa al riconoscimento del testo:
+  - Manca Registrazione schermo: «Non ho potuto leggere lo schermo: manca il permesso Registrazione schermo. Rispondo solo sul vault.» / «I couldn't read the screen: the Screen Recording permission is missing. I'll answer from the vault only.»
+  - Mancano entrambi: «Non ho potuto leggere lo schermo: mancano i permessi Accessibility e Registrazione schermo. Rispondo solo sul vault.» / «I couldn't read the screen: the Accessibility and Screen Recording permissions are missing. I'll answer from the vault only.»
+- Sotto il messaggio, il pulsante «Apri i permessi» / «Open permissions» apre la finestra dei permessi.
+
+## mini-chat/In risposta
+- Appena la domanda è inviata, la bolla di Axi compare con tre puntini animati: tre piccoli cerchi pieni nel colore del testo secondario che si alzano uno dopo l'altro a onda, come quelli del puntino, in un ciclo di circa 2,2 s (a metà velocità con "Riduci movimento"). Il primo passo o il primo testo li sostituisce.
+- La sintesi sta in cima alla bolla della risposta, sopra il testo, in carattere piccolo e nel colore del testo secondario: un passo per riga, nell'ordine in cui OMP li compie; il passo in corso finisce con i tre puntini animati.
+- Testi dei passi (italiano / inglese), con il titolo del documento del vault:
+  - Ricerca nel vault: «Cerco “parole” nel vault» / «Searching the vault for “words”»; senza parole, solo con filtri: «Cerco nel vault» / «Searching the vault».
+  - Pagina letta: «Leggo pagina N di “titolo”» / «Reading page N of “title”».
+  - Citazioni: «Cito N documenti» / «Citing N documents» («Cito 1 documento» / «Citing 1 document»).
+  - Tag: «Cambio i tag di “titolo”» / «Changing the tags of “title”».
+  - Eliminazione: «Chiedo di eliminare “titolo”» / «Asking to delete “title”».
+  - Nuovo tentativo: «Il provider non risponde, riprovo (N di M)…» / «The provider isn't responding, retrying (N of M)…».
+  - Riassunto della conversazione: «Riassumo la conversazione…» / «Summarizing the conversation…».
+- Sotto i passi, quando il modello ragiona, una sola riga in corsivo con l'ultima frase del ragionamento, così com'è, senza traduzione e senza formattazione Markdown; cambia man mano che il ragionamento arriva e si accorcia alla fine con «…» se non sta nella riga.
+- Finita la risposta (completata, interrotta, fallita o con OMP fermo), la sintesi si richiude in una riga con una freccia: «Ha cercato N volte e letto M pagine» / «Searched N times, read M pages», omettendo le parti a zero; senza ricerche né pagine lette ma con altri passi «N passi» / «N steps»; con il solo ragionamento «Ha ragionato» / «Reasoned». Un clic sulla riga la apre e mostra tutti i passi e il ragionamento intero; un altro clic la richiude. Senza passi né ragionamento la riga non c'è.
+
+## mini-chat/Conferma dell'eliminazione
+- Una scheda nella conversazione mostra titolo, tipo, data di archiviazione e allegati collegati che spariranno, con i pulsanti Elimina (stile distruttivo) e Annulla.
+
+## mini-chat/Elenco delle conversazioni
+- Elenco dalla più recente, con titolo e data dell'ultimo messaggio; ogni riga ha un'azione per eliminarla.
+- Il titolo di una conversazione è la sua prima domanda, accorciata.

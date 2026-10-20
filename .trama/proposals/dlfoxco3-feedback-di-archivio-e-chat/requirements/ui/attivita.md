@@ -1,0 +1,34 @@
+---
+description: "Use when building what the dot shows while archiving: three dots, queue count, outcome signals and bubbles with their texts."
+---
+# Attività del puntino
+
+## attivita
+- A riposo il puntino è fermo: si vede l'aspetto fermo.
+- Durante un'archiviazione, da quando l'utente la chiede o rilascia dei file fino all'ultimo esito, il puntino mostra i tre puntini (vedi `puntino`), senza aspettare nessun passo dell'archiviazione; quando ci sono documenti in coda il loro numero compare alla destra del personaggio, in bianco dentro un piccolo cerchio nel colore accento (una capsula da due cifre in su). Nella barra dei menu il cerchio è nel colore delle icone di sistema con il numero trasparente, e l'elemento si allarga per contenerlo.
+- Successo: breve rimbalzo del personaggio con una piccola spunta verde di sistema. Errore: breve scossa orizzontale con il personaggio tinto del rosso di sistema. Documento già presente: un breve lampo del personaggio in una tinta chiara del colore accento, senza scossa. Finito il segnale il personaggio torna ai colori del tema. Nella barra dei menu gli stessi segnali sono nel colore delle icone di sistema: la spunta è un cerchio pieno con il segno trasparente, l'errore è la sola scossa senza tinta, il lampo è un breve schiarirsi della sagoma.
+- Con il puntino visibile la nuvoletta compare accanto al personaggio, dal lato con più spazio, interamente sullo schermo. Con il puntino nascosto compare sotto l'icona della barra, allineata a lei e interamente sullo schermo; se la barra dei menu è nascosta (per esempio in un'app a schermo intero) compare comunque in alto sullo schermo attivo, sotto il punto dell'icona, sopra l'app a schermo intero. Se la chat è aperta compare in sovrimpressione in cima alla chat, anche quella che dice che Axi sta archiviando. Per un documento archiviato mostra titolo, tag e l'elenco degli allegati non presi con l'indicazione di trascinarli o aprirli; per un documento non archiviato mostra il motivo in una frase.
+- La nuvoletta è di vetro, con angoli arrotondati di circa 12 pt come le bolle della chat. Accanto al personaggio o sotto l'icona della barra ha una coda di due cerchietti di vetro, il più piccolo vicino al personaggio o all'icona, come la nuvoletta di un fumetto; in sovrimpressione sulla chat non ha coda.
+- Nome d'origine del documento, come compare nelle nuvolette tra virgolette tipografiche: il nome del file con la sua estensione; l'oggetto dell'email, o «email senza oggetto» / «email with no subject» se manca; il titolo della pagina web, o il suo dominio se il titolo manca. Un nome che non sta in una riga si accorcia nel mezzo con «…».
+- Nuvoletta di avvio (italiano / inglese), seguita da tre puntini animati:
+  - Durante la ricerca del documento a schermo: «Sto archiviando» / «Archiving».
+  - Con il documento individuato o con un file rilasciato: «Sto archiviando “X”» / «Archiving “X”», dove X è il nome d'origine. Il nome compare al posto della sola scritta senza che la nuvoletta si chiuda e si riapra.
+- I tre puntini della nuvoletta di avvio sono tre piccoli cerchi pieni nel colore del testo secondario, alti come una lettera minuscola, che si alzano uno dopo l'altro a onda nello stesso ciclo di circa 2,2 s dei tre puntini del personaggio; con "Riduci movimento" attivo vanno a metà velocità.
+- Esiti (italiano / inglese), con X il nome d'origine:
+  - Archiviato: prima riga «Ho archiviato “X”» / «Archived “X”», poi titolo, tag e allegati non presi.
+  - Già presente: «“X” è già nel vault.» / «“X” is already in the vault.»
+  - Non archiviato: prima riga «Non ho archiviato “X”» / «Didn't archive “X”», poi il motivo in una frase.
+  - I rifiuti della ricerca a schermo non hanno un nome d'origine e mostrano solo il loro testo.
+- Per un'email archiviata senza data di ricezione la nuvoletta aggiunge, sotto titolo e tag, la riga «Non ho capito quando è arrivata: l'ho archiviata senza data di ricezione.» / «I couldn't tell when it arrived: archived without a received date.»
+- Testi dei rifiuti e dell'errore imprevisto (italiano / inglese):
+  - Nessun documento: «Qui non vedo un documento da archiviare: salvalo prima come file.» / «I don't see a document to archive here: save it as a file first.»
+  - Indirizzo non leggibile: «Non riesco a leggere l'indirizzo di questa pagina.» / «I can't read this page's address.»
+  - Manca Accessibility: «Per leggere lo schermo serve il permesso Accessibility.» / «Reading the screen needs the Accessibility permission.»
+  - Manca l'Automazione: «Per leggere questa pagina serve il permesso di Automazione per Safari.» (o Chrome) / «Reading this page needs the Automation permission for Safari.» (or Chrome)
+  - Manca l'Automazione per il Finder: «Per leggere la selezione del Finder serve il permesso di Automazione per il Finder.» / «Reading the Finder selection needs the Automation permission for Finder.»
+  - Errore imprevisto: «Qualcosa è andato storto: il documento non è stato archiviato.» / «Something went wrong: the document wasn't archived.»
+- Testi di un PDF di pagina web non archiviato (italiano / inglese):
+  - Non scaricato: «Non sono riuscito a scaricare questo PDF: scaricalo tu e trascinalo sul puntino.» / «I couldn't download this PDF: download it and drop it on the dot.»
+  - Troppo grande: «Questo PDF supera i 200 MB: scaricalo tu e trascinalo sul puntino.» / «This PDF is over 200 MB: download it and drop it on the dot.»
+- Lo scaricamento del PDF di una pagina web non cambia l'aspetto del puntino: mostra gli stessi tre puntini di ogni archiviazione.
+- La nuvoletta di avvio resta finché non la sostituisce un esito, un rifiuto o un avviso, oppure finché l'utente non ci fa clic; non ha un tempo di scadenza. Le altre nuvolette restano 5 secondi, o finché il puntatore ci resta sopra, e sono cliccabili; mentre un'archiviazione continua, allo scadere o al clic lasciano il posto alla nuvoletta di avvio del documento in lavorazione.

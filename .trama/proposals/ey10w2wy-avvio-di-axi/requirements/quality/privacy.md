@@ -1,0 +1,12 @@
+---
+description: Use when handling document content, AI requests, screen reading, credentials or permissions.
+---
+# Privacy e sicurezza
+
+## General
+- Documenti, indice, embedding e conversazioni restano sul Mac. Escono solo verso il provider AI configurato in OMP e, se configurato, verso Azure Document Intelligence.
+- Archiviare un documento equivale ad autorizzarne l'elaborazione con l'AI: il suo contenuto, anche intero, può essere inviato al modello.
+- Lo schermo si legge solo su richiesta dell'utente, mai in modo continuo né in background.
+- Le credenziali stanno nel Keychain e non compaiono nei log.
+- OMP agisce sul vault solo tramite gli strumenti di Axi; nessuna eliminazione avviene senza conferma esplicita dell'utente.
+- I log non contengono il testo dei documenti né delle conversazioni.

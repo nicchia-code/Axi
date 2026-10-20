@@ -1,0 +1,174 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ · page %lld" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ · page %lld" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "%@ · pag. %lld" } }
+      }
+    },
+    "Ask Axi" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ask Axi" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Chiedi ad Axi" } }
+      }
+    },
+    "Ask something about your documents or the screen." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ask something about your documents or the screen." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Chiedi qualcosa sui tuoi documenti o sullo schermo." } }
+      }
+    },
+    "Archived on %@" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Archived on %@" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Archiviato il %@" } }
+      }
+    },
+    "Attachments that will disappear" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Attachments that will disappear" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Allegati che scompaiono" } }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Annulla" } }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Close" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Chiudi" } }
+      }
+    },
+    "Close list" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Close list" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Chiudi elenco" } }
+      }
+    },
+    "Conversations" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Conversations" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Conversazioni" } }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina" } }
+      }
+    },
+    "Delete conversation" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete conversation" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina conversazione" } }
+      }
+    },
+    "Delete this document?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete this document?" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Eliminare questo documento?" } }
+      }
+    },
+    "A deleted document's file stays on disk until the next launch." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "A deleted document's file stays on disk until the next launch." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Il file di un documento eliminato resta sul disco fino al prossimo avvio." } }
+      }
+    },
+    "I couldn't read the screen." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "I couldn't read the screen." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non ho potuto leggere lo schermo." } }
+      }
+    },
+    "I couldn't read the screen: the Accessibility and Screen Recording permissions are missing. I'll answer from the vault only." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "I couldn't read the screen: the Accessibility and Screen Recording permissions are missing. I'll answer from the vault only." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non ho potuto leggere lo schermo: mancano i permessi Accessibility e Registrazione schermo. Rispondo solo sul vault." } }
+      }
+    },
+    "I couldn't read the screen: the Screen Recording permission is missing. I'll answer from the vault only." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "I couldn't read the screen: the Screen Recording permission is missing. I'll answer from the vault only." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non ho potuto leggere lo schermo: manca il permesso Registrazione schermo. Rispondo solo sul vault." } }
+      }
+    },
+    "New" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nuova" } }
+      }
+    },
+    "New conversation" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New conversation" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nuova conversazione" } }
+      }
+    },
+    "No conversations" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No conversations" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessuna conversazione" } }
+      }
+    },
+    "This conversation couldn't be opened. It was left unchanged." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "This conversation couldn't be opened. It was left unchanged." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Questa conversazione non si apre. È rimasta invariata." } }
+      }
+    },
+    "Open permissions" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open permissions" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Apri i permessi" } }
+      }
+    },
+    "Remove context" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Remove context" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Rimuovi contesto" } }
+      }
+    },
+    "Retry" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Retry" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riprova" } }
+      }
+    },
+    "Send" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Send" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Invia" } }
+      }
+    },
+    "Stop" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stop" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Interrompi" } }
+      }
+    },
+    "The answer failed." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The answer failed." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "La risposta non è riuscita." } }
+      }
+    },
+    "The answer service stopped." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The answer service stopped." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Il servizio di risposta si è fermato." } }
+      }
+    },
+    "Type: %@" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Type: %@" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tipo: %@" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

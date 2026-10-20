@@ -1,0 +1,38 @@
+---
+status: resolved
+resolution: fix-code
+refs:
+  - requirements/tech#lettura-schermo
+  - lettura-schermo/Ricerca del documento
+proposal: null
+task: h3vkhdqg
+origin: null
+critical: false
+option: 1
+note: null
+resolvedBy: qe7ae4y7
+created: 2026-10-18T22:00:58.271Z
+---
+# Accessibility tree limits too low
+
+## What happens
+
+La lettura di una finestra scende solo fino a 25 livelli e legge al massimo 3.000 elementi. Un documento, un indirizzo o un testo più in fondo all'albero non viene trovato, e la ricerca risponde come se non ci fosse nulla da archiviare.
+
+## What should happen
+
+La lettura scende fino a 40 livelli e legge fino a 5.000 elementi, come chiede il requisito tecnico, così il documento, l'indirizzo e il testo si trovano anche quando sono più in profondità.
+
+## Fix options
+
+### Alzare i limiti a 40 e 5.000
+
+Portare la profondità a 40 livelli e il numero di elementi a 5.000, come scritto nel requisito. È una modifica di due valori. Ogni lettura visita più elementi e può durare di più, anche se ogni chiamata ha già un limite di due secondi. Va verificata su finestre grandi, per esempio una pagina web lunga o una casella di posta con molti messaggi.
+
+### Fermarsi appena trovato il documento
+
+Mantenere 40 livelli e 5.000 elementi come tetto massimo, ma smettere di scendere nell'albero non appena il documento o l'indirizzo della pagina sono stati trovati. Le letture più semplici restano veloci e il tetto del requisito non viene superato. Il testo visibile richiede comunque la finestra intera, quindi la scelta riduce il lavoro solo nella ricerca del documento.
+
+## Where in the code
+
+Packages/AxiScreen/Sources/AxiScreen/LiveAdapters.swift:10-11, costanti maxDepth e maxElements di LiveAccessibilityReader, usate da snapshot(of:)

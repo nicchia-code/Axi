@@ -1,0 +1,35 @@
+---
+description: Use when implementing duplicate detection, web page matching, document size limits for the AI, tagging, chunking or the archive queue.
+---
+# Regole di archiviazione e AI
+
+## coda-archiviazione
+- La coda è in ordine di arrivo; più file rilasciati insieme entrano nell'ordine in cui il Finder li consegna.
+
+## archiviazione/Acquisizione
+- Una pagina web corrisponde a ciò che si vede a schermo se almeno l'80% delle parole del testo della pagina si trova nel testo del PDF. Il testo della pagina è quello dell'area della pagina, senza l'interfaccia del browser (schede, barra degli indirizzi, segnalibri, barre degli strumenti); è lo stesso testo che si conserva quando la pagina entra senza PDF.
+- Un file aperto è un allegato di un'email se il suo nome coincide con quello di un allegato dell'email a schermo in Outlook o di un'email nel vault e il file viene dalla cartella in cui Outlook apre gli allegati.
+- L'email a schermo in Outlook non si usa per il collegamento se il suo corpo è vuoto (solo spazi o a capo): l'allegato si archivia da solo e l'email non entra nel vault.
+- La data di ricezione di un'email di Outlook si chiede a OMP passandogli il testo mostrato a schermo, il momento della lettura e il fuso del Mac. Un testo che OMP non sa interpretare, una risposta non valida o nessuna risposta lasciano la data di ricezione sconosciuta; l'archiviazione prosegue.
+
+## archiviazione/Controllo dei duplicati
+- L'impronta è lo SHA-256 dei byte della copia. Per un'email è quella del testo normalizzato di mittente, giorno di ricezione assoluto (nel fuso del Mac), oggetto e corpo; se la data di ricezione è sconosciuta, quella di mittente, oggetto e corpo. Per una pagina web senza PDF è quella di indirizzo e testo.
+
+## archiviazione/Generazione dei metadati
+- Un documento si invia intero se il suo testo occupa al massimo il 50% della finestra di contesto del modello scelto; altrimenti si invia a sezioni di pagine consecutive che rispettano lo stesso limite, si ottiene un riassunto per sezione e i metadati si ricavano dai riassunti.
+- Da 1 a 5 tag per documento. All'AI si passa il vocabolario dei tag del vault: deve preferire tag esistenti e crearne di nuovi solo se nessuno è adatto. Tag in minuscolo, al singolare.
+- Riassunto di al massimo 3 frasi; riassunto e tag nella lingua dell'interfaccia.
+- Riferimento per le date relative del contenuto: la data di ricezione per un'email; per gli altri documenti la data del documento se il testo la dice, altrimenti il momento dell'archiviazione. Il riferimento si passa all'AI con il fuso del Mac. Per un'email con data di ricezione sconosciuta non si passa nessun riferimento: le sue date relative restano senza data, con le parole originali; le date assolute del testo entrano comunque.
+- Le date citate sono eventi, scadenze e appuntamenti, scritti in forma relativa o assoluta; i riferimenti storici («fondata nel 1990») non entrano. Al massimo 20 per documento, nell'ordine in cui compaiono nel testo; un documento inviato a sezioni unisce le date di tutte le sezioni, senza doppioni, fino al limite.
+- Un'espressione ambigua o vaga diventa la data più probabile e conserva le parole originali; l'ora si registra solo se il testo la dice.
+- Il riassunto scrive le date in forma assoluta.
+
+## archiviazione/Indicizzazione
+- Il testo si divide in brani di circa 500 token che non attraversano le pagine, con sovrapposizione di circa 50 token; ogni brano conosce documento e pagina.
+
+## mini-chat
+- Ogni risposta cita i documenti e le pagine da cui prende le informazioni; senza fonti nel vault lo dice.
+- Un documento si passa intero all'AI se sta nel 50% della finestra di contesto del modello; altrimenti l'AI riceve i brani pertinenti e può sempre chiedere il testo di qualsiasi pagina.
+- La ricerca restituisce al massimo 20 brani per chiamata.
+- A ogni domanda l'AI riceve data, ora e fuso correnti; il contesto dello schermo porta il momento della sua lettura, e gli orari relativi del testo a schermo si risolvono rispetto a quel momento, non a quello della domanda.
+- Una data che nella fonte era relativa si scrive in forma assoluta seguita dalla forma relativa tra parentesi, rispetto al momento della domanda: «lunedì 20 ottobre alle 15:00 (domani)».

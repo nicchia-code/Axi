@@ -1,0 +1,73 @@
+# Archiviazione
+
+Il lavoro che porta un documento dalla coda al vault: copia, controllo dei duplicati, estrazione del testo, metadati generati dall'AI e indicizzazione. Lavora su un documento alla volta. Un documento entra nel vault solo se tutti i passi riescono; in ogni altro caso nel vault non resta nulla di quel documento.
+
+## States
+
+### Inattiva (initial)
+- `coda-archiviazione.PROSSIMO_DOCUMENTO` → In lavorazione: se OMP è pronto e il benvenuto è completato.
+- `coda-archiviazione.PROSSIMO_DOCUMENTO` → Inattiva: se OMP non è pronto o il benvenuto non è completato; il documento non viene archiviato e l'esito spiega cosa manca.
+
+### In lavorazione
+- `omp.TERMINATO` → Inattiva: il documento non viene archiviato e l'esito spiega che OMP si è fermato.
+
+#### Acquisizione (initial)
+Axi fa la sua copia del documento:
+- un file viene copiato così com'è;
+- un'email di Outlook diventa un documento con mittente, destinatari, oggetto, data e testo; i suoi allegati vengono presi con Accessibility e diventano documenti collegati all'email; gli allegati che non si riescono a prendere sono annotati per l'esito, e l'utente può aggiungerli trascinandoli sul puntino o aprendoli e chiedendo l'archiviazione;
+- una pagina web viene riaperta dal suo indirizzo e salvata come PDF; se il PDF non corrisponde a ciò che l'utente legge a schermo (per esempio una pagina dietro login), Axi conserva solo il testo letto a schermo e l'indirizzo, e lo dice nell'esito.
+Un file che è un allegato di un'email presente nel vault o ancora a schermo in Outlook viene collegato a quell'email.
+- `ACQUISITO` → Controllo dei duplicati
+- `ACQUISIZIONE_FALLITA` → Inattiva: il documento non si può leggere o copiare; l'esito spiega perché.
+
+#### Controllo dei duplicati
+Axi confronta l'impronta del contenuto con quelle dei documenti nel vault.
+- `GIA_PRESENTE` → Inattiva: lo stesso contenuto è già nel vault; non viene creata una copia nuova e l'esito indica il documento già presente.
+- `CONTENUTO_NUOVO` → Estrazione del testo
+
+#### Estrazione del testo
+Axi estrae il testo di tutte le pagine. Le pagine senza testo (scansioni, immagini) vengono riconosciute con Azure Document Intelligence se è configurato, altrimenti sul Mac.
+- `TESTO_ESTRATTO` → Generazione dei metadati
+- `ESTRAZIONE_FALLITA` → Inattiva: dal documento non si ricava testo; l'esito lo spiega.
+
+#### Generazione dei metadati
+Axi chiede a OMP titolo, riassunto, tag, data del documento e lingua. I tag riusano quelli già presenti nel vault e ne creano di nuovi solo se nessuno è adatto; riassunto e tag sono nella lingua dell'interfaccia. Un documento grande viene inviato a sezioni.
+- `omp.METADATI_GENERATI` → Indicizzazione
+- `omp.METADATI_FALLITI` → Inattiva: il documento non viene archiviato; l'esito spiega che l'AI non ha risposto.
+
+#### Indicizzazione
+Axi rende il documento ricercabile per parole e per significato.
+- `INDICIZZATO` → Inattiva: il documento, con i suoi allegati collegati, è nel vault.
+- `INDICIZZAZIONE_FALLITA` → Inattiva: il documento non viene archiviato; l'esito lo spiega.
+
+## Events
+
+### ARCHIVIATO
+Emesso quando un documento entra nel vault, con il suo titolo, i tag e gli eventuali allegati non presi.
+
+### NON_ARCHIVIATO
+Emesso a ogni ritorno in Inattiva senza un documento archiviato, con il motivo: già presente, OMP non pronto o fermato, benvenuto non completato, documento illeggibile, testo assente, AI o indicizzazione non riuscite.
+
+### ACQUISITO
+Emesso quando la copia del documento è pronta.
+
+### ACQUISIZIONE_FALLITA
+Emesso quando il documento non si riesce a leggere o copiare.
+
+### GIA_PRESENTE
+Emesso quando il contenuto è già nel vault.
+
+### CONTENUTO_NUOVO
+Emesso quando il contenuto non è nel vault.
+
+### TESTO_ESTRATTO
+Emesso quando il testo di tutte le pagine è pronto.
+
+### ESTRAZIONE_FALLITA
+Emesso quando dal documento non si ricava testo.
+
+### INDICIZZATO
+Emesso quando il documento è ricercabile.
+
+### INDICIZZAZIONE_FALLITA
+Emesso quando l'indicizzazione non riesce.

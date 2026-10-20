@@ -1,0 +1,1249 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ · page %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · page %2$lld"
+          }
+        }
+      }
+    },
+    "%@ of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ of %2$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "A deleted document's file stays on disk until the next launch." : {
+
+    },
+    "Accessibility" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        }
+      }
+    },
+    "All set." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All set."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutto pronto."
+          }
+        }
+      }
+    },
+    "Allow" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concedi"
+          }
+        }
+      }
+    },
+    "Already in the vault." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Already in the vault."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Già nel vault."
+          }
+        }
+      }
+    },
+    "Archive" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archive"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archivia"
+          }
+        }
+      }
+    },
+    "Archived" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archived"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archiviato"
+          }
+        }
+      }
+    },
+    "Archived “%@”" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archived “%@”"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ho archiviato “%@”"
+          }
+        }
+      }
+    },
+    "Didn't archive “%@”" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Didn't archive “%@”"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non ho archiviato “%@”"
+          }
+        }
+      }
+    },
+    "“%@” is already in the vault." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” is already in the vault."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” è già nel vault."
+          }
+        }
+      }
+    },
+    "Archived on %@" : {
+
+    },
+    "Archivia" : {
+
+    },
+    "Archiving" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archiving"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sto archiviando"
+          }
+        }
+      }
+    },
+    "Archiving “%@”" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archiving “%@”"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sto archiviando “%@”"
+          }
+        }
+      }
+    },
+    "Ask Axi" : {
+
+    },
+    "Ask something about your documents or the screen." : {
+
+    },
+    "Attachments not taken: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attachments not taken: %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allegati non presi: %@"
+          }
+        }
+      }
+    },
+    "Attachments that will disappear" : {
+
+    },
+    "Avvio in corso" : {
+
+    },
+    "Axi" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Axi"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Axi"
+          }
+        }
+      }
+    },
+    "Axi downloads the model it uses to search your vault. It stays on this Mac." : {
+
+    },
+    "Axi is missing some permissions: without them it can't read the screen." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Axi is missing some permissions: without them it can't read the screen."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad Axi mancano alcuni permessi: senza, non può leggere lo schermo."
+          }
+        }
+      }
+    },
+    "Axi needs these permissions. You can go on without them: features that need one stay limited until it is granted." : {
+
+    },
+    "Axi permissions" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Axi permissions"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permessi di Axi"
+          }
+        }
+      }
+    },
+    "Azure Document Intelligence" : {
+
+    },
+    "Browser Automation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Browser Automation"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automazione dei browser"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+
+    },
+    "Chat" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat"
+          }
+        }
+      }
+    },
+    "Chat is not available" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat is not available"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat non disponibile"
+          }
+        }
+      }
+    },
+    "Chat needs OMP, which is not ready yet." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat needs OMP, which is not ready yet."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La chat ha bisogno di OMP, che non è ancora pronto."
+          }
+        }
+      }
+    },
+    "Chiave" : {
+
+    },
+    "Chiave non salvata nel Keychain" : {
+
+    },
+    "Click to open the copy." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Click to open the copy."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clicca per aprire la copia."
+          }
+        }
+      }
+    },
+    "Close" : {
+
+    },
+    "Close list" : {
+
+    },
+    "Connessione non riuscita" : {
+
+    },
+    "Connessione riuscita" : {
+
+    },
+    "Connesso" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Conversations" : {
+
+    },
+    "Delete" : {
+
+    },
+    "Delete conversation" : {
+
+    },
+    "Delete this document?" : {
+
+    },
+    "Done" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fine"
+          }
+        }
+      }
+    },
+    "Download failed" : {
+
+    },
+    "Downloading the search model" : {
+
+    },
+    "Elenco dei modelli non disponibile" : {
+
+    },
+    "Endpoint" : {
+
+    },
+    "Finish the welcome window before archiving." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish the welcome window before archiving."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completa prima la finestra di benvenuto."
+          }
+        }
+      }
+    },
+    "Firefox doesn't need it: Accessibility is enough." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Firefox doesn't need it: Accessibility is enough."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Firefox non ne ha bisogno: gli basta Accessibility."
+          }
+        }
+      }
+    },
+    "Granted" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Granted"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concesso"
+          }
+        }
+      }
+    },
+    "Hide" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hide"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nascondi"
+          }
+        }
+      }
+    },
+    "I can't read this page's address." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I can't read this page's address."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non riesco a leggere l'indirizzo di questa pagina."
+          }
+        }
+      }
+    },
+    "I couldn't download this PDF: download it and drop it on the dot." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I couldn't download this PDF: download it and drop it on the dot."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non sono riuscito a scaricare questo PDF: scaricalo tu e trascinalo sul puntino."
+          }
+        }
+      }
+    },
+    "I couldn't read the screen: the Accessibility and Screen Recording permissions are missing. I'll answer from the vault only." : {
+
+    },
+    "I couldn't read the screen: the Screen Recording permission is missing. I'll answer from the vault only." : {
+
+    },
+    "I couldn't read the screen." : {
+
+    },
+    "I couldn't tell when it arrived: archived without a received date." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I couldn't tell when it arrived: archived without a received date."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non ho capito quando è arrivata: l'ho archiviata senza data di ricezione."
+          }
+        }
+      }
+    },
+    "I don't see a document to archive here: save it as a file first." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I don't see a document to archive here: save it as a file first."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qui non vedo un documento da archiviare: salvalo prima come file."
+          }
+        }
+      }
+    },
+    "Impostazioni" : {
+
+    },
+    "Indexing failed." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indexing failed."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indicizzazione non riuscita."
+          }
+        }
+      }
+    },
+    "Lets Axi read the Finder selection and the address of your browser tabs." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lets Axi read the Finder selection and the address of your browser tabs."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permette ad Axi di leggere la selezione del Finder e l'indirizzo delle schede del browser."
+          }
+        }
+      }
+    },
+    "Lets Axi read the screen when you ask it to." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lets Axi read the screen when you ask it to."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permette ad Axi di leggere lo schermo quando glielo chiedi."
+          }
+        }
+      }
+    },
+    "Lets Axi read the windows and use the Spotlight and Dictation keys." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lets Axi read the windows and use the Spotlight and Dictation keys."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve a leggere le finestre e a usare i tasti Spotlight e Dettatura."
+          }
+        }
+      }
+    },
+    "Modello" : {
+
+    },
+    "Modello AI" : {
+
+    },
+    "Nascondi" : {
+
+    },
+    "New" : {
+
+    },
+    "New conversation" : {
+
+    },
+    "No conversations" : {
+
+    },
+    "Non disponibile" : {
+
+    },
+    "Not granted" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not granted"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non concesso"
+          }
+        }
+      }
+    },
+    "OMP" : {
+
+    },
+    "OMP found" : {
+
+    },
+    "OMP is not ready." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OMP is not ready."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OMP non è pronto."
+          }
+        }
+      }
+    },
+    "OMP not available" : {
+
+    },
+    "OMP starting" : {
+
+    },
+    "OMP stopped while archiving." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OMP stopped while archiving."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OMP si è fermato durante l'archiviazione."
+          }
+        }
+      }
+    },
+    "Open %@ to check." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open %@ to check."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri %@ per verificare."
+          }
+        }
+      }
+    },
+    "Open permissions" : {
+
+    },
+    "Percorso" : {
+
+    },
+    "Permissions" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permissions"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permessi"
+          }
+        }
+      }
+    },
+    "Prova connessione" : {
+
+    },
+    "Quit Axi" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quit Axi"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esci da Axi"
+          }
+        }
+      }
+    },
+    "Reading the Finder selection needs the Automation permission for Finder." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading the Finder selection needs the Automation permission for Finder."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per leggere la selezione del Finder serve il permesso di Automazione per il Finder."
+          }
+        }
+      }
+    },
+    "Reading the screen needs the Accessibility permission." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading the screen needs the Accessibility permission."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per leggere lo schermo serve il permesso Accessibility."
+          }
+        }
+      }
+    },
+    "Reading the screen needs the Screen Recording permission." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading the screen needs the Screen Recording permission."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per leggere lo schermo serve il permesso di Registrazione dello schermo."
+          }
+        }
+      }
+    },
+    "Reading this page needs the Automation permission for %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading this page needs the Automation permission for %@."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per leggere questa pagina serve il permesso di Automazione per %@."
+          }
+        }
+      }
+    },
+    "Reading this page needs the Automation permission for the browser." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading this page needs the Automation permission for the browser."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per leggere questa pagina serve il permesso di Automazione per il browser."
+          }
+        }
+      }
+    },
+    "Remove context" : {
+
+    },
+    "Reopen Axi" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reopen Axi"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riapri Axi"
+          }
+        }
+      }
+    },
+    "Retry" : {
+
+    },
+    "Ripristina valori predefiniti" : {
+
+    },
+    "Scorciatoie" : {
+
+    },
+    "Screen Recording" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Recording"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrazione schermo"
+          }
+        }
+      }
+    },
+    "Screen Recording takes effect after reopening Axi." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Recording takes effect after reopening Axi."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrazione schermo vale dopo aver riaperto Axi."
+          }
+        }
+      }
+    },
+    "Se configurato, Azure viene usato per le pagine senza testo e per lo schermo." : {
+
+    },
+    "Send" : {
+
+    },
+    "Settings…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni…"
+          }
+        }
+      }
+    },
+    "Show" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra"
+          }
+        }
+      }
+    },
+    "Something went wrong: the document wasn't archived." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Something went wrong: the document wasn't archived."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qualcosa è andato storto: il documento non è stato archiviato."
+          }
+        }
+      }
+    },
+    "Spotlight e Dettatura" : {
+
+    },
+    "Stato" : {
+
+    },
+    "Step %lld of 2" : {
+
+    },
+    "Stop" : {
+
+    },
+    "Tasti Apple" : {
+
+    },
+    "The AI did not return valid details." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The AI did not return valid details."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'AI non ha restituito dettagli validi."
+          }
+        }
+      }
+    },
+    "Asking to delete “%@”" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiedo di eliminare “%@”"
+          }
+        }
+      }
+    },
+    "Changing the tags of “%@”" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambio i tag di “%@”"
+          }
+        }
+      }
+    },
+    "Citing 1 document" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cito 1 documento"
+          }
+        }
+      }
+    },
+    "Citing %lld documents" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cito %lld documenti"
+          }
+        }
+      }
+    },
+    "%lld steps" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld passi"
+          }
+        }
+      }
+    },
+    "Read %lld pages" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha letto %lld pagine"
+          }
+        }
+      }
+    },
+    "Reading page %lld of “%@”" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggo pagina %lld di “%@”"
+          }
+        }
+      }
+    },
+    "Reasoned" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha ragionato"
+          }
+        }
+      }
+    },
+    "Searched %lld times" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha cercato %lld volte"
+          }
+        }
+      }
+    },
+    "Searched %lld times and read %lld pages" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha cercato %lld volte e letto %lld pagine"
+          }
+        }
+      }
+    },
+    "Searching the vault" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerco nel vault"
+          }
+        }
+      }
+    },
+    "Searching the vault for “%@”" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerco “%@” nel vault"
+          }
+        }
+      }
+    },
+    "Summarizing the conversation" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riassumo la conversazione"
+          }
+        }
+      }
+    },
+    "The provider isn't responding, retrying (%lld of %lld)" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il provider non risponde, riprovo (%lld di %lld)"
+          }
+        }
+      }
+    },
+    "The answer failed." : {
+
+    },
+    "The answer service stopped." : {
+
+    },
+    "The document cannot be read." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The document cannot be read."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il documento non si può leggere."
+          }
+        }
+      }
+    },
+    "The document has no text." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The document has no text."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il documento non ha testo."
+          }
+        }
+      }
+    },
+    "The vault holds only the text you read on screen and the address." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The vault holds only the text you read on screen and the address."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nel vault ci sono solo il testo letto a schermo e l'indirizzo."
+          }
+        }
+      }
+    },
+    "This conversation couldn't be opened. It was left unchanged." : {
+
+    },
+    "This PDF is over 200 MB: download it and drop it on the dot." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This PDF is over 200 MB: download it and drop it on the dot."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo PDF supera i 200 MB: scaricalo tu e trascinalo sul puntino."
+          }
+        }
+      }
+    },
+    "Type: %@" : {
+
+    },
+    "Welcome to Axi" : {
+
+    },
+    "You can drag them or open them." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can drag them or open them."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si possono trascinare o aprire."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

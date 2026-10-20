@@ -1,0 +1,32 @@
+[
+  {
+    "documentID": "doc-contratto",
+    "title": "Contratto di locazione",
+    "kind": "contratto",
+    "origin": "scanner",
+    "tags": ["casa", "legale"],
+    "archivedAt": "2025-03-10T09:00:00Z",
+    "page": 2,
+    "snippet": "Il canone mensile è di 850 euro, da pagare entro il giorno cinque."
+  },
+  {
+    "documentID": "doc-fattura",
+    "title": "Fattura elettrica marzo",
+    "kind": "fattura",
+    "origin": "email",
+    "tags": ["casa", "spese"],
+    "archivedAt": "2025-03-18T12:00:00Z",
+    "page": 1,
+    "snippet": "Importo totale della fornitura elettrica di marzo."
+  },
+  {
+    "documentID": "doc-referto",
+    "title": "Referto analisi",
+    "kind": "medico",
+    "origin": "scanner",
+    "tags": ["salute"],
+    "archivedAt": "2025-04-02T08:30:00Z",
+    "page": null,
+    "snippet": "Valori del sangue nella norma, colesterolo leggermente alto."
+  }
+]

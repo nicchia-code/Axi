@@ -1,0 +1,77 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and publish macOS app (Apple Silicon)
+    runs-on: macos-26
+    timeout-minutes: 60
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Select the newest Xcode 26
+        run: |
+          xcode=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -n 1)
+          sudo xcode-select -s "$xcode"
+          xcodebuild -version
+
+      - name: Build the Release app
+        run: |
+          xcodebuild \
+            -project Axi.xcodeproj \
+            -scheme Axi \
+            -destination 'platform=macOS,arch=arm64' \
+            -configuration Release \
+            -derivedDataPath build \
+            -skipMacroValidation \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY=- \
+            DEVELOPMENT_TEAM= \
+            CODE_SIGNING_REQUIRED=NO \
+            build
+
+      - name: Check the app signature
+        run: |
+          app="build/Build/Products/Release/Axi.app"
+          test -d "$app"
+          codesign --verify --deep --strict "$app"
+          codesign -d --entitlements - "$app" 2>&1
+
+      - name: Package the app
+        run: |
+          app="build/Build/Products/Release/Axi.app"
+          name="Axi-${GITHUB_REF_NAME}-macos-arm64"
+          mkdir -p dist
+          ditto -c -k --sequesterRsrc --keepParent "$app" "dist/$name.zip"
+          (cd dist && shasum -a 256 "$name.zip" > "$name.zip.sha256")
+          ls -l dist
+
+      - name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat > release-notes.md <<'EOF'
+          Axi for macOS 26 on Apple Silicon.
+
+          This build is not notarized. The app is ad-hoc signed, so macOS blocks it on first launch. To open it:
+
+          1. Unzip the archive and move `Axi.app` to `/Applications`.
+          2. Open it once, then go to System Settings › Privacy & Security and click **Open Anyway**.
+
+          Or, in Terminal: `xattr -dr com.apple.quarantine /Applications/Axi.app`
+
+          Axi needs OMP installed on the Mac to archive documents and answer questions.
+          EOF
+          gh release create "$GITHUB_REF_NAME" dist/*.zip dist/*.sha256 \
+            --verify-tag \
+            --title "Axi $GITHUB_REF_NAME" \
+            --notes-file release-notes.md

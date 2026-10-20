@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    name: Build and test (macOS 26, Apple Silicon)
+    runs-on: macos-26
+    timeout-minutes: 60
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Select the newest Xcode 26
+        run: |
+          xcode=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -n 1)
+          sudo xcode-select -s "$xcode"
+          xcodebuild -version
+
+      - name: Build the app
+        run: |
+          xcodebuild \
+            -project Axi.xcodeproj \
+            -scheme Axi \
+            -destination 'platform=macOS,arch=arm64' \
+            -configuration Debug \
+            -skipMacroValidation \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Test the packages
+        run: |
+          for package in AxiCore AxiScreen AxiOMP AxiEmbedding AxiVectors; do
+            echo "::group::swift test $package"
+            swift test --package-path "Packages/$package"
+            echo "::endgroup::"
+          done

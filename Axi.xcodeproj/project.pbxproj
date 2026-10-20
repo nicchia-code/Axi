@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A0000000000000000000010 /* AxiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000001 /* AxiApp.swift */; };
+		7A0000000000000000000011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000002 /* AppDelegate.swift */; };
+		7A0000000000000000000012 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000003 /* Localizable.xcstrings */; };
+		7A0000000000000000000013 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000000055 /* KeyboardShortcuts */; };
+		7A0000000000000000000014 /* AxiCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000000051 /* AxiCore */; };
+		7A0000000000000000000015 /* AxiScreen in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000000052 /* AxiScreen */; };
+		7A0000000000000000000016 /* AxiOMP in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000000053 /* AxiOMP */; };
+		7A0000000000000000000017 /* AxiEmbedding in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000000054 /* AxiEmbedding */; };
+		7A000000000000000000BB12 /* PuntinoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB02 /* PuntinoController.swift */; };
+		7A000000000000000000BB13 /* PuntinoModello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB03 /* PuntinoModello.swift */; };
+		7A000000000000000000BB14 /* PuntinoPannelli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB04 /* PuntinoPannelli.swift */; };
+		7A000000000000000000BB15 /* PuntinoVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB05 /* PuntinoVista.swift */; };
+		7A000000000000000000BB18 /* PuntinoDisegno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB08 /* PuntinoDisegno.swift */; };
+		7A000000000000000000BB19 /* PuntinoBarraTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB1A /* PuntinoBarraTemplate.swift */; };
+		7A000000000000000000BB16 /* MenuRadialeVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB06 /* MenuRadialeVista.swift */; };
+		7A000000000000000000BB17 /* NuvolettaVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A000000000000000000BB07 /* NuvolettaVista.swift */; };
+		7A0000000000000000C00002 /* BenvenutoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00001 /* BenvenutoModel.swift */; };
+		7A0000000000000000C00004 /* BenvenutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00003 /* BenvenutoView.swift */; };
+		7A0000000000000000C00006 /* BenvenutoWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00005 /* BenvenutoWindowController.swift */; };
+		7A0000000000000000C00043 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00042 /* LaunchAtLogin.swift */; };
+		7A0000000000000000C00008 /* AppInPrimoPiano.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00007 /* AppInPrimoPiano.swift */; };
+		7A0000000000000000C0000A /* ImpostazioniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00009 /* ImpostazioniController.swift */; };
+		7A0000000000000000C0000C /* ImpostazioniModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C0000B /* ImpostazioniModel.swift */; };
+		7A0000000000000000C0000E /* ImpostazioniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C0000D /* ImpostazioniView.swift */; };
+		7A0000000000000000C00010 /* Scorciatoie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C0000F /* Scorciatoie.swift */; };
+		7A0000000000000000FE0002 /* TastiAppleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000FE0001 /* TastiAppleController.swift */; };
+		7A0000000000000000C00012 /* AssistantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00011 /* AssistantService.swift */; };
+		7A0000000000000000C00014 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00013 /* ChatModels.swift */; };
+		7A0000000000000000C00016 /* ChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00015 /* ChatTools.swift */; };
+		7A0000000000000000C00018 /* ConversationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00017 /* ConversationStore.swift */; };
+		7A0000000000000000D00001 /* PermessiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000D00005 /* PermessiModel.swift */; };
+		7A0000000000000000D00002 /* PermessiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000D00006 /* PermessiView.swift */; };
+		7A0000000000000000D00003 /* PermessiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000D00007 /* PermessiController.swift */; };
+		7A0000000000000000D00004 /* PermessiRighe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000D00008 /* PermessiRighe.swift */; };
+		7A0000000000000000C0001A /* MiniChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00019 /* MiniChatController.swift */; };
+		7A0000000000000000C0001C /* MiniChatMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C0001B /* MiniChatMachine.swift */; };
+		7A0000000000000000C0001E /* MiniChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C0001D /* MiniChatView.swift */; };
+		7A0000000000000000C00020 /* VaultSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C0001F /* VaultSearch.swift */; };
+		7A0000000000000000C00022 /* WorkspaceDocumentOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00021 /* WorkspaceDocumentOpener.swift */; };
+		7A0000000000000000C00031 /* OMPAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00030 /* OMPAssistant.swift */; };
+		7A0000000000000000C00041 /* MiniChatFinestra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000C00040 /* MiniChatFinestra.swift */; };
+		7A0000000000000000E00A02 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000E00A01 /* InfoPlist.xcstrings */; };
+		7A0000000000000000DD000E /* AxiCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000DD000B /* AxiCore */; };
+		7A0000000000000000DD000F /* AxiScreen in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000DD000C /* AxiScreen */; };
+		7A0000000000000000DD0010 /* AxiOMP in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0000000000000000DD000D /* AxiOMP */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A0000000000000000DD000A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A0000000000000000000040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A0000000000000000000030;
+			remoteInfo = Axi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A0000000000000000000001 /* AxiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxiApp.swift; sourceTree = "<group>"; };
+		7A0000000000000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A0000000000000000000003 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		7A0000000000000000000004 /* Axi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Axi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A000000000000000000BB02 /* PuntinoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntinoController.swift; sourceTree = "<group>"; };
+		7A000000000000000000BB03 /* PuntinoModello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntinoModello.swift; sourceTree = "<group>"; };
+		7A000000000000000000BB04 /* PuntinoPannelli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntinoPannelli.swift; sourceTree = "<group>"; };
+		7A000000000000000000BB05 /* PuntinoVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntinoVista.swift; sourceTree = "<group>"; };
+		7A000000000000000000BB08 /* PuntinoDisegno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntinoDisegno.swift; sourceTree = "<group>"; };
+		7A000000000000000000BB1A /* PuntinoBarraTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntinoBarraTemplate.swift; sourceTree = "<group>"; };
+		7A000000000000000000BB06 /* MenuRadialeVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRadialeVista.swift; sourceTree = "<group>"; };
+		7A000000000000000000BB07 /* NuvolettaVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuvolettaVista.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00001 /* BenvenutoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenvenutoModel.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00003 /* BenvenutoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenvenutoView.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00005 /* BenvenutoWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenvenutoWindowController.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00042 /* LaunchAtLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLogin.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00007 /* AppInPrimoPiano.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInPrimoPiano.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00009 /* ImpostazioniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniController.swift; sourceTree = "<group>"; };
+		7A0000000000000000C0000B /* ImpostazioniModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniModel.swift; sourceTree = "<group>"; };
+		7A0000000000000000C0000D /* ImpostazioniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniView.swift; sourceTree = "<group>"; };
+		7A0000000000000000C0000F /* Scorciatoie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorciatoie.swift; sourceTree = "<group>"; };
+		7A0000000000000000FE0001 /* TastiAppleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastiAppleController.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00011 /* AssistantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantService.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00013 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00015 /* ChatTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTools.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00017 /* ConversationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationStore.swift; sourceTree = "<group>"; };
+		7A0000000000000000D00005 /* PermessiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermessiModel.swift; sourceTree = "<group>"; };
+		7A0000000000000000D00006 /* PermessiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermessiView.swift; sourceTree = "<group>"; };
+		7A0000000000000000D00007 /* PermessiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermessiController.swift; sourceTree = "<group>"; };
+		7A0000000000000000D00008 /* PermessiRighe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermessiRighe.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00019 /* MiniChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChatController.swift; sourceTree = "<group>"; };
+		7A0000000000000000C0001B /* MiniChatMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChatMachine.swift; sourceTree = "<group>"; };
+		7A0000000000000000C0001D /* MiniChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChatView.swift; sourceTree = "<group>"; };
+		7A0000000000000000C0001F /* VaultSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultSearch.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00021 /* WorkspaceDocumentOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceDocumentOpener.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00030 /* OMPAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMPAssistant.swift; sourceTree = "<group>"; };
+		7A0000000000000000C00040 /* MiniChatFinestra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChatFinestra.swift; sourceTree = "<group>"; };
+		7A0000000000000000E00A01 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		7A0000000000000000E00A03 /* Axi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Axi.entitlements; sourceTree = "<group>"; };
+		7A0000000000000000DD0001 /* AxiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7A0000000000000000DD0002 /* AxiTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AxiTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A0000000000000000000021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0000000000000000000013 /* KeyboardShortcuts in Frameworks */,
+				7A0000000000000000000014 /* AxiCore in Frameworks */,
+				7A0000000000000000000015 /* AxiScreen in Frameworks */,
+				7A0000000000000000000016 /* AxiOMP in Frameworks */,
+				7A0000000000000000000017 /* AxiEmbedding in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0000000000000000DD0008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0000000000000000DD000E /* AxiCore in Frameworks */,
+				7A0000000000000000DD000F /* AxiScreen in Frameworks */,
+				7A0000000000000000DD0010 /* AxiOMP in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A0000000000000000000005 /* Axi */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000000001 /* AxiApp.swift */,
+				7A0000000000000000000002 /* AppDelegate.swift */,
+				7A0000000000000000000003 /* Localizable.xcstrings */,
+				7A0000000000000000E00A01 /* InfoPlist.xcstrings */,
+				7A0000000000000000E00A03 /* Axi.entitlements */,
+				7A000000000000000000BB01 /* Puntino */,
+				7A0000000000000000C00023 /* Benvenuto */,
+				7A0000000000000000C00024 /* Impostazioni */,
+				7A0000000000000000D00009 /* Permessi */,
+				7A0000000000000000C00025 /* MiniChat */,
+			);
+			path = Axi;
+			sourceTree = "<group>";
+		};
+		7A0000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000000004 /* Axi.app */,
+				7A0000000000000000DD0001 /* AxiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A0000000000000000000007 = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000000005 /* Axi */,
+				7A0000000000000000DD0002 /* AxiTests */,
+				7A0000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A000000000000000000BB01 /* Puntino */ = {
+			isa = PBXGroup;
+			children = (
+				7A000000000000000000BB02 /* PuntinoController.swift */,
+				7A000000000000000000BB03 /* PuntinoModello.swift */,
+				7A000000000000000000BB04 /* PuntinoPannelli.swift */,
+				7A000000000000000000BB05 /* PuntinoVista.swift */,
+				7A000000000000000000BB08 /* PuntinoDisegno.swift */,
+				7A000000000000000000BB1A /* PuntinoBarraTemplate.swift */,
+				7A000000000000000000BB06 /* MenuRadialeVista.swift */,
+				7A000000000000000000BB07 /* NuvolettaVista.swift */,
+			);
+			path = Puntino;
+			sourceTree = "<group>";
+		};
+		7A0000000000000000C00023 /* Benvenuto */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000C00001 /* BenvenutoModel.swift */,
+				7A0000000000000000C00003 /* BenvenutoView.swift */,
+				7A0000000000000000C00005 /* BenvenutoWindowController.swift */,
+				7A0000000000000000C00042 /* LaunchAtLogin.swift */,
+			);
+			path = Benvenuto;
+			sourceTree = "<group>";
+		};
+		7A0000000000000000C00024 /* Impostazioni */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000C00007 /* AppInPrimoPiano.swift */,
+				7A0000000000000000C00009 /* ImpostazioniController.swift */,
+				7A0000000000000000C0000B /* ImpostazioniModel.swift */,
+				7A0000000000000000C0000D /* ImpostazioniView.swift */,
+				7A0000000000000000C0000F /* Scorciatoie.swift */,
+				7A0000000000000000FE0001 /* TastiAppleController.swift */,
+			);
+			path = Impostazioni;
+			sourceTree = "<group>";
+		};
+		7A0000000000000000D00009 /* Permessi */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000D00005 /* PermessiModel.swift */,
+				7A0000000000000000D00006 /* PermessiView.swift */,
+				7A0000000000000000D00007 /* PermessiController.swift */,
+				7A0000000000000000D00008 /* PermessiRighe.swift */,
+			);
+			path = Permessi;
+			sourceTree = "<group>";
+		};
+		7A0000000000000000C00025 /* MiniChat */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000C00011 /* AssistantService.swift */,
+				7A0000000000000000C00013 /* ChatModels.swift */,
+				7A0000000000000000C00015 /* ChatTools.swift */,
+				7A0000000000000000C00017 /* ConversationStore.swift */,
+				7A0000000000000000C00019 /* MiniChatController.swift */,
+				7A0000000000000000C0001B /* MiniChatMachine.swift */,
+				7A0000000000000000C0001D /* MiniChatView.swift */,
+				7A0000000000000000C0001F /* VaultSearch.swift */,
+				7A0000000000000000C00021 /* WorkspaceDocumentOpener.swift */,
+				7A0000000000000000C00030 /* OMPAssistant.swift */,
+				7A0000000000000000C00040 /* MiniChatFinestra.swift */,
+			);
+			path = MiniChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A0000000000000000000030 /* Axi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A0000000000000000000031 /* Build configuration list for PBXNativeTarget "Axi" */;
+			buildPhases = (
+				7A0000000000000000000020 /* Sources */,
+				7A0000000000000000000021 /* Frameworks */,
+				7A0000000000000000000022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Axi;
+			packageProductDependencies = (
+				7A0000000000000000000055 /* KeyboardShortcuts */,
+				7A0000000000000000000051 /* AxiCore */,
+				7A0000000000000000000052 /* AxiScreen */,
+				7A0000000000000000000053 /* AxiOMP */,
+				7A0000000000000000000054 /* AxiEmbedding */,
+			);
+			productName = Axi;
+			productReference = 7A0000000000000000000004 /* Axi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A0000000000000000DD0003 /* AxiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A0000000000000000DD0004 /* Build configuration list for PBXNativeTarget "AxiTests" */;
+			buildPhases = (
+				7A0000000000000000DD0007 /* Sources */,
+				7A0000000000000000DD0008 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A0000000000000000DD0009 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7A0000000000000000DD0002 /* AxiTests */,
+			);
+			name = AxiTests;
+			packageProductDependencies = (
+				7A0000000000000000DD000B /* AxiCore */,
+				7A0000000000000000DD000C /* AxiScreen */,
+				7A0000000000000000DD000D /* AxiOMP */,
+			);
+			productName = AxiTests;
+			productReference = 7A0000000000000000DD0001 /* AxiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A0000000000000000000040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					7A0000000000000000000030 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					7A0000000000000000DD0003 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 7A0000000000000000000030;
+					};
+				};
+			};
+			buildConfigurationList = 7A0000000000000000000034 /* Build configuration list for PBXProject "Axi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				it,
+			);
+			mainGroup = 7A0000000000000000000007;
+			packageReferences = (
+				7A0000000000000000000041 /* XCLocalSwiftPackageReference "Packages/AxiCore" */,
+				7A0000000000000000000042 /* XCLocalSwiftPackageReference "Packages/AxiScreen" */,
+				7A0000000000000000000043 /* XCLocalSwiftPackageReference "Packages/AxiOMP" */,
+				7A0000000000000000000044 /* XCLocalSwiftPackageReference "Packages/AxiEmbedding" */,
+				7A0000000000000000000045 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			productRefGroup = 7A0000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A0000000000000000000030 /* Axi */,
+				7A0000000000000000DD0003 /* AxiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A0000000000000000000022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0000000000000000000012 /* Localizable.xcstrings in Resources */,
+				7A0000000000000000E00A02 /* InfoPlist.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A0000000000000000000020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0000000000000000000010 /* AxiApp.swift in Sources */,
+				7A0000000000000000000011 /* AppDelegate.swift in Sources */,
+				7A000000000000000000BB12 /* PuntinoController.swift in Sources */,
+				7A000000000000000000BB13 /* PuntinoModello.swift in Sources */,
+				7A000000000000000000BB14 /* PuntinoPannelli.swift in Sources */,
+				7A000000000000000000BB15 /* PuntinoVista.swift in Sources */,
+				7A000000000000000000BB18 /* PuntinoDisegno.swift in Sources */,
+				7A000000000000000000BB19 /* PuntinoBarraTemplate.swift in Sources */,
+				7A000000000000000000BB16 /* MenuRadialeVista.swift in Sources */,
+				7A000000000000000000BB17 /* NuvolettaVista.swift in Sources */,
+				7A0000000000000000C00002 /* BenvenutoModel.swift in Sources */,
+				7A0000000000000000C00004 /* BenvenutoView.swift in Sources */,
+				7A0000000000000000C00006 /* BenvenutoWindowController.swift in Sources */,
+				7A0000000000000000C00043 /* LaunchAtLogin.swift in Sources */,
+				7A0000000000000000C00008 /* AppInPrimoPiano.swift in Sources */,
+				7A0000000000000000C0000A /* ImpostazioniController.swift in Sources */,
+				7A0000000000000000C0000C /* ImpostazioniModel.swift in Sources */,
+				7A0000000000000000C0000E /* ImpostazioniView.swift in Sources */,
+				7A0000000000000000C00010 /* Scorciatoie.swift in Sources */,
+				7A0000000000000000FE0002 /* TastiAppleController.swift in Sources */,
+				7A0000000000000000C00012 /* AssistantService.swift in Sources */,
+				7A0000000000000000C00014 /* ChatModels.swift in Sources */,
+				7A0000000000000000C00016 /* ChatTools.swift in Sources */,
+				7A0000000000000000C00018 /* ConversationStore.swift in Sources */,
+				7A0000000000000000C0001A /* MiniChatController.swift in Sources */,
+				7A0000000000000000D00001 /* PermessiModel.swift in Sources */,
+				7A0000000000000000D00002 /* PermessiView.swift in Sources */,
+				7A0000000000000000D00003 /* PermessiController.swift in Sources */,
+				7A0000000000000000D00004 /* PermessiRighe.swift in Sources */,
+				7A0000000000000000C0001C /* MiniChatMachine.swift in Sources */,
+				7A0000000000000000C0001E /* MiniChatView.swift in Sources */,
+				7A0000000000000000C00020 /* VaultSearch.swift in Sources */,
+				7A0000000000000000C00022 /* WorkspaceDocumentOpener.swift in Sources */,
+				7A0000000000000000C00031 /* OMPAssistant.swift in Sources */,
+				7A0000000000000000C00041 /* MiniChatFinestra.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0000000000000000DD0007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A0000000000000000DD0009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A0000000000000000000030 /* Axi */;
+			targetProxy = 7A0000000000000000DD000A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7A0000000000000000000032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		7A0000000000000000000033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		7A0000000000000000000035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Axi/Axi.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y884G9YMG6;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Axi;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Axi reads the address of the page open in your browser, so it can answer questions about the page you are viewing.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Axi authors. Licensed under AGPL-3.0.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca.Axi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7A0000000000000000000036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Axi/Axi.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y884G9YMG6;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Axi;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Axi reads the address of the page open in your browser, so it can answer questions about the page you are viewing.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Axi authors. Licensed under AGPL-3.0.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca.Axi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		7A0000000000000000DD0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y884G9YMG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca.AxiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axi.app/Contents/MacOS/Axi";
+			};
+			name = Debug;
+		};
+		7A0000000000000000DD0006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y884G9YMG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca.AxiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axi.app/Contents/MacOS/Axi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A0000000000000000000031 /* Build configuration list for PBXNativeTarget "Axi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0000000000000000000035 /* Debug */,
+				7A0000000000000000000036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A0000000000000000000034 /* Build configuration list for PBXProject "Axi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0000000000000000000032 /* Debug */,
+				7A0000000000000000000033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A0000000000000000DD0004 /* Build configuration list for PBXNativeTarget "AxiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0000000000000000DD0005 /* Debug */,
+				7A0000000000000000DD0006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7A0000000000000000000041 /* XCLocalSwiftPackageReference "Packages/AxiCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AxiCore;
+		};
+		7A0000000000000000000042 /* XCLocalSwiftPackageReference "Packages/AxiScreen" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AxiScreen;
+		};
+		7A0000000000000000000043 /* XCLocalSwiftPackageReference "Packages/AxiOMP" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AxiOMP;
+		};
+		7A0000000000000000000044 /* XCLocalSwiftPackageReference "Packages/AxiEmbedding" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AxiEmbedding;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A0000000000000000000045 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A0000000000000000000051 /* AxiCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000041 /* XCLocalSwiftPackageReference "Packages/AxiCore" */;
+			productName = AxiCore;
+		};
+		7A0000000000000000000052 /* AxiScreen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000042 /* XCLocalSwiftPackageReference "Packages/AxiScreen" */;
+			productName = AxiScreen;
+		};
+		7A0000000000000000000053 /* AxiOMP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000043 /* XCLocalSwiftPackageReference "Packages/AxiOMP" */;
+			productName = AxiOMP;
+		};
+		7A0000000000000000000054 /* AxiEmbedding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000044 /* XCLocalSwiftPackageReference "Packages/AxiEmbedding" */;
+			productName = AxiEmbedding;
+		};
+		7A0000000000000000000055 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000045 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		7A0000000000000000DD000B /* AxiCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000041 /* XCLocalSwiftPackageReference "Packages/AxiCore" */;
+			productName = AxiCore;
+		};
+		7A0000000000000000DD000C /* AxiScreen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000042 /* XCLocalSwiftPackageReference "Packages/AxiScreen" */;
+			productName = AxiScreen;
+		};
+		7A0000000000000000DD000D /* AxiOMP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0000000000000000000043 /* XCLocalSwiftPackageReference "Packages/AxiOMP" */;
+			productName = AxiOMP;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7A0000000000000000000040 /* Project object */;
+}

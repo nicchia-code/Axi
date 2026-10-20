@@ -1,0 +1,13 @@
+---
+description: Use when handling errors, failures or diagnostics while reading the screen or archiving.
+---
+# Affidabilità
+
+## lettura-schermo
+- Nessun errore durante la lettura dello schermo chiude Axi: un errore non previsto nella ricerca del documento diventa un rifiuto con motivo «errore imprevisto».
+- Ogni rifiuto e ogni fallimento della lettura si registra nel log di sistema con il passo, il motivo e l'app di origine; senza testo letto a schermo e senza indirizzi completi delle pagine (al più il dominio).
+
+## archiviazione
+- Nessun errore durante l'archiviazione chiude Axi: un errore non previsto diventa un documento non archiviato con motivo «errore imprevisto», e nel vault non resta nulla di esso.
+- Ogni fallimento di un passo dell'archiviazione, compreso un PDF di pagina web non creato o scartato perché non corrisponde, si registra nel log di sistema con il passo, il motivo e l'origine del documento; senza testo del documento e senza indirizzi completi delle pagine (al più il dominio).
+- Un errore non previsto non si racconta come uno dei motivi previsti (per esempio «indicizzazione non riuscita»).

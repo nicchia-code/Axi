@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Design of the dot (Axi/Puntino/PuntinoDisegno.swift). Only circles and ellipses, sharp edges, flat colours.
+       Colours follow the macOS accent; the example is the default blue (light #007AFF, dark #2290FF body).
+       Shades: shadow = body mixed 28% with black; highlight = body mixed 35% with white; eyes = body mixed 75% with white. -->
+  <defs>
+    <clipPath id="clip-corpo">
+      <ellipse id="contorno-corpo" cx="50" cy="52" rx="35" ry="31"/>
+    </clipPath>
+    <mask id="maschera-barra">
+      <ellipse id="maschera-corpo" cx="50" cy="52" rx="35" ry="31" fill="#FFFFFF"/>
+      <ellipse id="ritaglio-occhio-sinistro" cx="41" cy="50" rx="3.6" ry="5" fill="#000000"/>
+      <ellipse id="ritaglio-occhio-destro" cx="59" cy="50" rx="3.6" ry="5" fill="#000000"/>
+    </mask>
+  </defs>
+
+  <!-- Posa ferma: a riposo il personaggio è il corpo, con l'ombra a sinistra, la luce in alto a destra e gli occhi. -->
+  <g id="ferma-chiara">
+    <ellipse id="ombra-chiara" cx="50" cy="52" rx="35" ry="31" fill="#0058B8"/>
+    <g clip-path="url(#clip-corpo)">
+      <ellipse id="corpo-chiaro" cx="53.85" cy="48.59" rx="32.9" ry="29.14" fill="#007AFF"/>
+    </g>
+    <ellipse id="riflesso-chiaro" cx="67" cy="35" rx="7" ry="4.5" transform="rotate(-35 67 35)" fill="#59A9FF"/>
+    <ellipse id="occhio-sinistro-chiaro" cx="41" cy="50" rx="3.6" ry="5" fill="#BFDEFF"/>
+    <ellipse id="occhio-destro-chiaro" cx="59" cy="50" rx="3.6" ry="5" fill="#BFDEFF"/>
+  </g>
+  <g id="ferma-scura">
+    <ellipse id="ombra-scura" cx="50" cy="52" rx="35" ry="31" fill="#1868B8"/>
+    <g clip-path="url(#clip-corpo)">
+      <ellipse id="corpo-scuro" cx="53.85" cy="48.59" rx="32.9" ry="29.14" fill="#2290FF"/>
+    </g>
+    <ellipse id="riflesso-scuro" cx="67" cy="35" rx="7" ry="4.5" transform="rotate(-35 67 35)" fill="#6FB7FF"/>
+    <ellipse id="occhio-sinistro-scuro" cx="41" cy="50" rx="3.6" ry="5" fill="#C8E3FF"/>
+    <ellipse id="occhio-destro-scuro" cx="59" cy="50" rx="3.6" ry="5" fill="#C8E3FF"/>
+  </g>
+
+  <!-- Tre puntini: tre cerchi pieni e uguali, senza ombra né riflesso né occhi. -->
+  <g id="tre-puntini-chiara" fill="#007AFF">
+    <circle id="goccia-sinistra-chiara" cx="25" cy="50" r="9"/>
+    <circle id="goccia-centrale-chiara" cx="50" cy="50" r="9"/>
+    <circle id="goccia-destra-chiara" cx="75" cy="50" r="9"/>
+  </g>
+  <g id="tre-puntini-scura" fill="#2290FF">
+    <circle id="goccia-sinistra-scura" cx="25" cy="50" r="9"/>
+    <circle id="goccia-centrale-scura" cx="50" cy="50" r="9"/>
+    <circle id="goccia-destra-scura" cx="75" cy="50" r="9"/>
+  </g>
+
+  <!-- Posa ferma monocroma della barra dei menu: una sagoma in un solo colore (qui nero, il colore è deciso da macOS
+       nell'immagine template), senza ombra né riflesso; gli occhi sono ritagliati con la maschera, quindi trasparenti. -->
+  <g id="barra-ferma-monocroma" fill="#000000" mask="url(#maschera-barra)">
+    <ellipse id="sagoma-corpo" cx="50" cy="52" rx="35" ry="31"/>
+  </g>
+</svg>
